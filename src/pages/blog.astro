@@ -1,25 +1,13 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "My very interesting and not boring blog";
 ---
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/TutorialWebsite/favicon.svg" />
-        <link rel="icon" href="/TutorialWebsite/favicon.ico" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{pageTitle}</title>
-    </head>
-    <body>
-        <a href="/TutorialWebsite/">Home</a>
-        <a href="/TutorialWebsite/about/">About</a>
-        <h1>{pageTitle}</h1>
-        <p>This is where I will post about my journey learning Astro.</p>
-        <ul>
-            <li><a href="/TutorialWebsite/posts/post-1">Post 1</a></li>
-            <li><a href="/TutorialWebsite/posts/post-2">Post 2</a></li>
-            <li><a href="/TutorialWebsite/posts/post-3">Post 3</a></li>
-        </ul>
-    </body>
-</html>
+<BaseLayout {pageTitle}>
+    <p>This is where I will post about my journey learning Astro.</p>
+    <ul>
+        <li><a href="/TutorialWebsite/posts/post-1">Post 1</a></li>
+        <li><a href="/TutorialWebsite/posts/post-2">Post 2</a></li>
+        <li><a href="/TutorialWebsite/posts/post-3">Post 3</a></li>
+    </ul>
+</BaseLayout>

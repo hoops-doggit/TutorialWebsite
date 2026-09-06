@@ -10,7 +10,6 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-# First blog Post
 Welcome to my _new blog_ about learning Astro!
 
 ## What I've accomplished
